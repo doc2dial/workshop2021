@@ -756,14 +756,16 @@
                 next agent turn. <br>
                 <span>Input</span>: dialogue history, current user utterance and associated document.<br>
                 <span>Output</span>: start position in the document and a text span.<br>
-                <span>Evaluation</span>: Exact Match and token-level F1 score metrics. <br>
+                <span>Evaluation</span>: <a href="https://huggingface.co/metrics/squad">Exact Match and F1</a> metrics.
+                <br>
               </li>
               <li class="collection-header"><b>Subtask2 - text generation</b></li>
               <li class="collection-item">
                 <span>Goal</span>: generating next agent response in natual language. <br>
                 <span>Input</span>: dialogue history and associated document.<br>
                 <span>Output</span>: agent utterance.<br>
-                <span>Evaluation</span>: sacrebleu and human evaluations.<br>
+                <span>Evaluation</span>: <a href="https://huggingface.co/metrics/sacrebleu">sacrebleu</a> and human
+                evaluations.<br>
               </li>
             </ul>
 
