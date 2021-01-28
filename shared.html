@@ -1,0 +1,838 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>&#x2145;ial&#x2145;oc21 | Shared Task</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="dialdoc workshop at ACL 2021" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://doc2dial.github.io/workshop2021/" />
+  <meta property="og:image" content="https://doc2dial.github.io/workshop2021/file/dialdoc_banner.png" />
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+    }); 
+  </script>
+</head>
+
+
+<body class="blue-grey darken-2">
+  <div id="header"></div>
+  <main>
+    <div class="container">
+      <div class="card-panel white">
+        <div class="section">
+          <h4>Shared Task</h4>
+          <p>
+            We propose a shared task for building goal-oriented information-seeking dialogue systems. In particular, the
+            goal is to teach a dialogue system to identify the most relevant knowledge in the associated document for
+            generating agent responses in natural language. An agent response could be either a follow-up question or an
+            answer to user's query based on both dialogue-based and document-based contexts.
+          </p>
+          <blockquote><b>Please join our <a href="https://groups.google.com/g/dialdoc" target="_blank">Google
+                Group</a> for important notifications.</b>
+            <p>
+              <b class="red-text text-lighten-2"><a
+                  class="waves-effect waves-light btn red lighten-2 grey-text text-lighten-3">leaderboard</a>
+                is
+                coming soon.</b>
+            </p>
+          </blockquote>
+
+          <div class="card-image">
+            <div>
+              <svg viewBox="0 0 971 463"
+                style="left: 0px; top: 0px; width: 100%; height: 100%; display: block; background-color: transparent; background-image: none;">
+                <defs>
+                  <filter id="dropShadow">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="1.7" result="blur"></feGaussianBlur>
+                    <feOffset in="blur" dx="3" dy="3" result="offsetBlur"></feOffset>
+                    <feFlood flood-color="#3D4574" flood-opacity="0.4" result="offsetColor"></feFlood>
+                    <feComposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur"></feComposite>
+                    <feBlend in="SourceGraphic" in2="offsetBlur"></feBlend>
+                  </filter>
+                </defs>
+                <g>
+                  <g></g>
+                  <g>
+                    <g style="visibility: visible;">
+                      <rect x="9" y="18" width="440" height="418" rx="16.72" ry="16.72" fill="#ffffff" stroke="#ff8000"
+                        stroke-width="2" pointer-events="all"></rect>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="358" y="28.5" width="50" height="10" fill="none" stroke="white" pointer-events="stroke"
+                        visibility="hidden" stroke-width="9"></rect>
+                      <rect x="358" y="28.5" width="50" height="10" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 32px; margin-left: 360px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
+                              <div
+                                style="display: inline-block; font-size: 9px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <font color="#808080"><span>end user</span></font>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="56" y="26.5" width="40" height="10" fill="none" stroke="white" pointer-events="stroke"
+                        visibility="hidden" stroke-width="9"></rect>
+                      <rect x="56" y="26.5" width="40" height="10" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 30px; margin-left: 58px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
+                              <div
+                                style="display: inline-block; font-size: 9px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <font color="#808080">agent<br></font>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="36" y="24" width="20" height="17" fill="none" stroke="white" pointer-events="stroke"
+                        visibility="hidden" stroke-width="9"></rect>
+                      <rect x="36" y="24" width="20" height="17" fill="none" stroke="none" pointer-events="all"></rect>
+                      <path
+                        d="M 47.93 26.65 L 51.55 26.65 L 51.55 26.21 L 47.93 26.21 Z M 47.93 28.2 L 52.66 28.2 L 52.66 27.76 L 47.93 27.76 Z M 45.98 30.41 C 45.67 30.41 45.42 30.21 45.42 29.97 L 45.42 24.44 C 45.42 24.22 45.65 24 45.97 24 L 55.45 24 C 55.75 24 56 24.21 56 24.43 L 56 29.97 C 56 30.21 55.74 30.41 55.45 30.41 L 53.08 30.41 L 50.71 32.61 L 50.71 30.41 Z M 43.76 34.27 C 41.73 34.27 39.91 32.92 39.91 30.85 C 39.91 29.25 41.45 27.61 43.69 27.61 C 44 27.61 44.3 27.64 44.59 27.7 L 44.59 30.03 C 44.65 30.63 45.18 31.05 45.97 31.07 L 47.48 31.07 C 47.4 33 45.55 34.27 43.76 34.27 Z M 36 41 C 36.17 39.52 36.41 37.5 36.86 36.48 C 37.06 36.02 37.36 35.69 37.85 35.41 C 38.16 35.22 39.27 34.73 39.48 34.65 C 39.84 34.51 40.21 34.43 40.52 34.65 C 42.41 35.98 45.02 35.94 46.94 34.66 C 47.16 34.48 47.51 34.53 47.74 34.6 C 48.11 34.71 49.29 35.26 49.51 35.37 C 50.16 35.71 50.51 36.16 50.77 37.01 C 51.1 38.15 51.3 39.61 51.52 41 Z"
+                        fill="url(#mx-gradient-000066-1-ffffff-1-s-0)" stroke="none" pointer-events="all"></path>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="402" y="27" width="20" height="19" fill="none" stroke="white" pointer-events="stroke"
+                        visibility="hidden" stroke-width="9"></rect>
+                      <rect x="402" y="27" width="20" height="19" fill="none" stroke="none" pointer-events="all"></rect>
+                      <path
+                        d="M 413.93 29.96 L 417.55 29.96 L 417.55 29.47 L 413.93 29.47 Z M 413.93 31.69 L 418.66 31.69 L 418.66 31.2 L 413.93 31.2 Z M 411.98 34.16 C 411.67 34.16 411.42 33.94 411.42 33.67 L 411.42 27.49 C 411.42 27.25 411.65 27 411.97 27 L 421.45 27 C 421.75 27 422 27.23 422 27.48 L 422 33.67 C 422 33.94 421.74 34.16 421.45 34.16 L 419.08 34.16 L 416.71 36.63 L 416.71 34.16 Z M 409.76 38.48 C 407.73 38.48 405.91 36.97 405.91 34.66 C 405.91 32.87 407.45 31.03 409.69 31.03 C 410 31.03 410.3 31.07 410.59 31.14 L 410.59 33.74 C 410.65 34.4 411.18 34.88 411.97 34.9 L 413.48 34.9 C 413.4 37.06 411.55 38.48 409.76 38.48 Z M 402 46 C 402.17 44.35 402.41 42.09 402.86 40.95 C 403.06 40.43 403.36 40.06 403.85 39.75 C 404.16 39.54 405.27 39 405.48 38.91 C 405.84 38.74 406.21 38.65 406.52 38.91 C 408.41 40.39 411.02 40.35 412.94 38.91 C 413.16 38.71 413.51 38.76 413.74 38.85 C 414.11 38.97 415.29 39.58 415.51 39.71 C 416.16 40.09 416.51 40.59 416.77 41.54 C 417.1 42.81 417.3 44.44 417.52 46 Z"
+                        fill="url(#mx-gradient-660000-1-ffffff-1-s-0)" stroke="none" pointer-events="all"></path>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="78.5" y="54" width="360" height="20" fill="#e6e6e6" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe flex-end; width: 1px; height: 1px; padding-top: 64px; margin-left: 437px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: right; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <b>
+                                  <font color="#330000">U1</font>
+                                </b>:I heard about a disability benefit for clothing.&nbsp;What is it about?
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="177.5" y="121" width="260" height="20" fill="#e6e6e6" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe flex-end; width: 1px; height: 1px; padding-top: 131px; margin-left: 436px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: right; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <b>U3</b>: I am quite interested about such benefits.
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="339.5" y="163" width="100" height="20" fill="#e6e6e6" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe flex-end; width: 1px; height: 1px; padding-top: 173px; margin-left: 438px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: right; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <b>U5</b>: Absolutely.
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="238.5" y="223" width="200" height="20" fill="#e6e6e6" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe flex-end; width: 1px; height: 1px; padding-top: 233px; margin-left: 437px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: right; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <b>U7</b>: The latter just happened to me!
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="367.5" y="290" width="70" height="20" fill="#e6e6e6" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe flex-end; width: 1px; height: 1px; padding-top: 300px; margin-left: 436px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: right; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <b>U9</b>: True.&nbsp;
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="23" y="304" width="239.5" height="30" fill="none" stroke="white" pointer-events="stroke"
+                        visibility="hidden" stroke-width="9"></rect>
+                      <rect x="23" y="304" width="239.5" height="30" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 311px; margin-left: 25px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #333333; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <font><b>A10</b>: You have met the requirements. <b>
+                                    <font color="#808080">[5]&amp;[6]</font>
+                                  </b></font>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="198.5" y="335" width="240" height="20" fill="#e6e6e6" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe flex-end; width: 1px; height: 1px; padding-top: 345px; margin-left: 437px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: right; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <b>U11</b>: How much do I get for such benefit?
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="24" y="351" width="281" height="30" fill="none" stroke="white" pointer-events="stroke"
+                        visibility="hidden" stroke-width="9"></rect>
+                      <rect x="24" y="351" width="281" height="30" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 358px; margin-left: 26px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000099; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <font color="#333333"><b>A12</b>: $888.88 &nbsp;&nbsp;</font><b>
+                                  <font color="#808080">[12]</font>
+                                </b>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="24" y="77" width="281" height="42" fill="none" stroke="white" pointer-events="stroke"
+                        visibility="hidden" stroke-width="9"></rect>
+                      <rect x="24" y="77" width="281" height="42" fill="none" stroke="none" pointer-events="all"></rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 84px; margin-left: 26px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #333333; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <b>A2</b>: This is a disability compensation benefit known&nbsp;<br>as an annual
+                                clothing allowance. <b>
+                                  <font color="#999999">[2]&amp;[3]</font>
+                                </b>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="25" y="142" width="290" height="30" fill="none" stroke="white" pointer-events="stroke"
+                        visibility="hidden" stroke-width="9"></rect>
+                      <rect x="25" y="142" width="290" height="30" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 149px; margin-left: 27px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #994C00; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <font color="#333333"><b>A4</b>: Would you like to find out if you are
+                                  eligible?<b>&nbsp;</b></font><span
+                                  style="color: rgb(51 , 51 , 51) ; background-color: rgb(255 , 229 , 153)">
+                                  <font color="#999999"><b>[4]</b></font>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="24" y="182" width="360" height="40" fill="none" stroke="white" pointer-events="stroke"
+                        visibility="hidden" stroke-width="9"></rect>
+                      <rect x="24" y="182" width="360" height="40" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 189px; margin-left: 26px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #994C00; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <font color="#333333"><b>A6</b>: Any damages to your clothes that were caused by
+                                  prosthetic&nbsp;<br>or orthopedic device or your skin medicine<b>?</b></font> <b>
+                                  <font color="#808080">[7]</font>
+                                </b>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="22" y="245" width="905" height="40" fill="none" stroke="white" pointer-events="stroke"
+                        visibility="hidden" stroke-width="9"></rect>
+                      <rect x="22" y="245" width="905" height="40" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 252px; margin-left: 24px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #333333; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <font><b>A8</b>: Sorry to hear that. And Is it true that you need this device&nbsp;or
+                                  skin<br>&nbsp;medicine because of an injury or illness related to your military
+                                  service? <b>
+                                    <font color="#999999">[8]</font>
+                                  </b></font>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;"></g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="474.55" y="41.19" width="481.45" height="392.81" fill="#000000" stroke="#000000"
+                        transform="translate(2,3)" opacity="0.25"></rect>
+                      <rect x="474.55" y="41.19" width="481.45" height="392.81" fill="#ffffff" stroke="#007fff"
+                        pointer-events="all"></rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 455px; height: 1px; padding-top: 238px; margin-left: 485px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Bitter,Georgia,Cambria,Times New Roman,Times,serif; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <font face="Georgia">
+                                  <font style="font-size: 15px"><br>
+                                    <font color="#808080">[1]&nbsp;</font><b>Clothing allowance&nbsp;</b><br>
+                                  </font><br>
+                                  <font color="#808080">[2]</font>You may be able to get money each year to help buy new
+                                  clothes.&nbsp;&nbsp;<font color="#808080">[3]</font>This is a disability compensation
+                                  benefit known as an annual clothing allowance.<br><br><b>
+                                    <font color="#808080" style="background-color: rgb(255 , 229 , 153)">[4]</font>Can I
+                                    get disability benefits from VA?<br><br>
+                                  </b>
+                                  <font color="#808080">[5]</font>It depends on whether you meet both of the
+                                  requirements listed below.&nbsp;&nbsp;<br><br>
+                                  <font color="#808080">[6]</font>Both of these must be true:<br>
+                                </font>
+                                <ul>
+                                  <li>
+                                    <font face="Georgia">
+                                      <font color="#808080">[7]</font>Your prosthetic or orthopedic device or your skin
+                                      medicine causes damage&nbsp;
+                                    </font><span style="font-family: &quot;georgia&quot;">to your clothes, and</span>
+                                  </li>
+                                  <li>
+                                    <font face="Georgia">
+                                      <font color="#808080">[8]</font>You need this device or skin medicine because of
+                                      an injury or illness related to your military service (called a service-connected
+                                      condition)&nbsp;
+                                    </font>
+                                  </li>
+                                </ul>
+                                <font face="Georgia"><br><b>
+                                    <font color="#808080">[9]</font>What disability benefits can I get?
+                                  </b><br></font>
+                                <ul>
+                                  <li>
+                                    <font face="Georgia">
+                                      <font color="#808080">[10]</font>A one-time payment, or<br>
+                                    </font>
+                                  </li>
+                                  <li>
+                                    <font face="Georgia">
+                                      <font color="#808080">[11]</font>A yearly payment
+                                    </font>
+                                  </li>
+                                </ul>
+                                <font face="Georgia"><br></font>
+                                <font face="Georgia">
+                                  <font color="#808080">[12]</font>Note: The current clothing allowance rate is
+                                  $888.88.<br>
+                                </font>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="474" y="22.38" width="484.19" height="30.98" fill="#003366" stroke="none"
+                        pointer-events="all"></rect>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="490.43" y="24.6" width="50" height="20" fill="none" stroke="white"
+                        pointer-events="stroke" visibility="hidden" stroke-width="9"></rect>
+                      <rect x="490.43" y="24.6" width="50" height="20" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 35px; margin-left: 515px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <b>
+                                  <font color="#ffffff"><u>Home</u></font>
+                                </b>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="538.63" y="23.49" width="20" height="20" fill="none" stroke="white"
+                        pointer-events="stroke" visibility="hidden" stroke-width="9"></rect>
+                      <rect x="538.63" y="23.49" width="20" height="20" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 33px; margin-left: 549px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <font color="#ffffff" style="font-size: 9px">&gt;</font>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="551.78" y="24.6" width="120" height="20" fill="none" stroke="white"
+                        pointer-events="stroke" visibility="hidden" stroke-width="9"></rect>
+                      <rect x="551.78" y="24.6" width="120" height="20" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 35px; margin-left: 612px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <font color="#ffffff"><span><b><u>Disability Benefits</u></b></span></font>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="690.9" y="24.6" width="70" height="20" fill="none" stroke="white" pointer-events="stroke"
+                        visibility="hidden" stroke-width="9"></rect>
+                      <rect x="690.9" y="24.6" width="70" height="20" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 35px; margin-left: 726px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <font color="#ffffff"><span><b><u>Eligibility</u></b></span></font>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="784.01" y="25.7" width="120" height="20" fill="none" stroke="white"
+                        pointer-events="stroke" visibility="hidden" stroke-width="9"></rect>
+                      <rect x="784.01" y="25.7" width="120" height="20" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 36px; margin-left: 844px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <font color="#ffffff"><span><b>Clothing allowance</b></span></font>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="676.66" y="23.49" width="20" height="20" fill="none" stroke="white"
+                        pointer-events="stroke" visibility="hidden" stroke-width="9"></rect>
+                      <rect x="676.66" y="23.49" width="20" height="20" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 33px; margin-left: 687px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <font color="#ffffff" style="font-size: 9px">&gt;</font>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="765.39" y="23.49" width="20" height="20" fill="none" stroke="white"
+                        pointer-events="stroke" visibility="hidden" stroke-width="9"></rect>
+                      <rect x="765.39" y="23.49" width="20" height="20" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 33px; margin-left: 775px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <font color="#ffffff" style="font-size: 9px">&gt;</font>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="68.5" y="382" width="370" height="20" fill="#e6e6e6" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe center; justify-content: unsafe flex-end; width: 1px; height: 1px; padding-top: 392px; margin-left: 437px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: right; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <b>U13</b>: Am I still eligible for student load if I get the disability&nbsp;benefit?
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <rect x="22" y="401" width="281" height="30" fill="none" stroke="white" pointer-events="stroke"
+                        visibility="hidden" stroke-width="9"></rect>
+                      <rect x="22" y="401" width="281" height="30" fill="none" stroke="none" pointer-events="all">
+                      </rect>
+                    </g>
+                    <g style="">
+                      <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                          height="100%">
+                          <div
+                            style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 408px; margin-left: 24px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
+                              <div
+                                style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000099; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                <font color="#333333"><b>A14</b>: <i>Irrelevant request detected.</i></font>
+                              </div>
+                            </div>
+                          </div>
+                        </foreignObject>
+                      </g>
+                    </g>
+                    <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                      <path d="M 306 157 Q 402 146 475.93 164.56" fill="none" stroke="white" pointer-events="stroke"
+                        visibility="hidden" stroke-width="9"></path>
+                      <path d="M 306 157 Q 402 146 475.93 164.56" fill="none" stroke="none" pointer-events="stroke">
+                      </path>
+                      <path d="M 481.02 165.83 L 473.38 167.53 L 475.93 164.56 L 475.08 160.74 Z" fill="none"
+                        stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                      <path d="M 481.02 165.83 L 473.38 167.53 L 475.93 164.56 L 475.08 160.74 Z" fill="none"
+                        stroke="none" pointer-events="all"></path>
+                      <path
+                        d="M 307.67 155.39 M 306 157 C 368.87 148.15 426.59 153.98 477.19 166.39 M 306.46 155.6 C 368.94 150.09 428.8 152.13 473.67 164.59"
+                        fill="none" stroke="white" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
+                        pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                      <path
+                        d="M 307.67 155.39 M 306 157 C 368.87 148.15 426.59 153.98 477.19 166.39 M 306.46 155.6 C 368.94 150.09 428.8 152.13 473.67 164.59"
+                        fill="none" stroke="#004c99" stroke-linejoin="round" stroke-linecap="round"
+                        stroke-miterlimit="10" pointer-events="stroke"></path>
+                      <path
+                        d="M 474.84 161.02 C 474.84 161.02 474.84 161.02 474.84 161.02 M 474.84 161.02 C 474.84 161.02 474.84 161.02 474.84 161.02 M 473.44 168.17 C 475.27 166.6 475.93 164.97 477.99 163.72 M 473.74 168.18 C 474.91 167.27 475.58 165.86 477.75 163.55"
+                        fill="none" stroke="white" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
+                        pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                      <path
+                        d="M 474.84 161.02 C 474.84 161.02 474.84 161.02 474.84 161.02 M 474.84 161.02 C 474.84 161.02 474.84 161.02 474.84 161.02 M 473.44 168.17 C 475.27 166.6 475.93 164.97 477.99 163.72 M 473.74 168.18 C 474.91 167.27 475.58 165.86 477.75 163.55"
+                        fill="none" stroke="#004c99" stroke-linejoin="round" stroke-linecap="round"
+                        stroke-miterlimit="10" pointer-events="all"></path>
+                      <path
+                        d="M 482.18 165.53 M 481.27 165.06 C 479.61 166.89 477.88 167.03 473.74 166.9 M 481.4 165.6 C 478.34 166.61 475.32 167.21 473.75 167.72 M 473.75 167.24 C 474.19 166.85 474.5 166.19 475.56 164.76 M 473.43 167.63 C 474.44 166.52 475.29 165.4 476.12 164.58 M 475.94 164.87 C 475.97 163.84 475.46 162.38 475.33 160.75 M 475.86 164.7 C 475.71 163.02 475.08 161.64 474.92 160.89 M 474.35 161.03 C 476.98 162.5 478.03 164.17 480.69 165.72 M 475.08 160.38 C 477.45 162.57 479.34 164.55 480.7 165.85"
+                        fill="none" stroke="white" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
+                        pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                      <path
+                        d="M 482.18 165.53 M 481.27 165.06 C 479.61 166.89 477.88 167.03 473.74 166.9 M 481.4 165.6 C 478.34 166.61 475.32 167.21 473.75 167.72 M 473.75 167.24 C 474.19 166.85 474.5 166.19 475.56 164.76 M 473.43 167.63 C 474.44 166.52 475.29 165.4 476.12 164.58 M 475.94 164.87 C 475.97 163.84 475.46 162.38 475.33 160.75 M 475.86 164.7 C 475.71 163.02 475.08 161.64 474.92 160.89 M 474.35 161.03 C 476.98 162.5 478.03 164.17 480.69 165.72 M 475.08 160.38 C 477.45 162.57 479.34 164.55 480.7 165.85"
+                        fill="none" stroke="#004c99" stroke-linejoin="round" stroke-linecap="round"
+                        stroke-miterlimit="10" pointer-events="all"></path>
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                </g>
+                <linearGradient x1="0%" y1="0%" x2="0%" y2="100%" id="mx-gradient-000066-1-ffffff-1-s-0">
+                  <stop offset="0%" style="stop-color:#000066"></stop>
+                  <stop offset="100%" style="stop-color:#ffffff"></stop>
+                </linearGradient>
+                <linearGradient x1="0%" y1="0%" x2="0%" y2="100%" id="mx-gradient-660000-1-ffffff-1-s-0">
+                  <stop offset="0%" style="stop-color:#660000"></stop>
+                  <stop offset="100%" style="stop-color:#ffffff"></stop>
+                </linearGradient>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section">
+          <h5>Data</h5>
+          <p>
+            Our training data is derived from <a target="_blank" href="https://arxiv.org/abs/2011.06623">Doc2Dial</a>
+            dataset. The dataset contains goal-oriented conversations between an end user and an assistive agent. Each
+            turn is annotated with a dialogue scene, which includes role, dialogue act, and grounding in a document (or
+            <i>irrelevant</i> to domain documents). The documents are from different domains, such as <a target="_blank"
+              href="https://www.va.gov">va</a> and <a target="_blank" href="https://studentaid.gov">studentaid</a>.
+          </p>
+          <p>
+            You can download the dataset from <a href="file/doc2dial_sharedtask.zip">here</a>.
+            See our <a href="https://github.com/doc2dial/dialdoc21-sharedtask"><b>Github Repo</b></a> for more
+            information about the dataset.
+          </p>
+        </div>
+        <div class="section">
+          <h5>Subtasks</h5>
+          <div>
+
+            <ul class="collection with-header">
+              <li class="collection-header"><b>Subtask1 - knowledge identification</b></li>
+              <li class="collection-item">
+                <span>Goal</span>: identifying the grounding knowledge in form of document span for the
+                next agent turn. <br>
+                <span>Input</span>: dialogue history, current user utterance and associated document.<br>
+                <span>Output</span>: start position in the document and a text span.<br>
+                <span>Evaluation</span>: Exact Match and token-level F1 score metrics. <br>
+              </li>
+              <li class="collection-header"><b>Subtask2 - text generation</b></li>
+              <li class="collection-item">
+                <span>Goal</span>: generating next agent response in natual language. <br>
+                <span>Input</span>: dialogue history and associated document.<br>
+                <span>Output</span>: agent utterance.<br>
+                <span>Evaluation</span>: sacrebleu and human evaluations.<br>
+              </li>
+            </ul>
+
+            <blockquote>
+              Please see our <a href="https://github.com/doc2dial/dialdoc21-sharedtask"><b>Github Repo</b></a> for more
+              details about <b>data</b>, <b>evaluations</b>. <br>
+            </blockquote>
+
+
+          </div>
+
+          <div class="section">
+            <h5>Awards</h5>
+            For each subtask, we would like to reward the participants,
+            <div class="row">
+              <div class="col s4">
+                <table clas="highlight">
+                  <tbody>
+                    <tr>
+                      <td>1<sup>st</sup> Prize</td>
+                      <td>$1000</td>
+                    </tr>
+                    <tr>
+                      <td>2<sup>nd</sup> Prize</td>
+                      <td>$500</td>
+                    </tr>
+                    <tr>
+                      <td>3<sup>rd</sup> Prize</td>
+                      <td>$200</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="section">
+            <h4>Call for Participations</h4>
+            <p>
+              Each participant will be asked to complete at least one of the two subtasks. We welcome <i>long</i> and
+              <i>short</i> paper submissions on the shared task. All accepted submissions will
+              be presented at the workshop.
+            </p>
+            <blockquote>
+              <p>More details about the competitions and submissions are coming soon.</p>
+              <b>Please join our <a href="https://groups.google.com/g/dialdoc" target="_blank">Google
+                  Group</a> for important notifications!</b>
+            </blockquote>
+
+            <!-- <br>Submission link via <b class="grey-text">softconf</b> coming soon. -->
+          </div>
+
+          <div class="section">
+            <h4>Important Dates</h4>
+            <ul>
+              <li>Workshop Paper Due Date: April 26, 2021 (aoe)</li>
+              <li>Notification of Acceptance: May 28, 2021 (aoe)</li>
+              <li>Camera-ready papers due: June 7, 2021 (aoe)</li>
+              <li>Workshop Dates: August 5-6, 2021</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h4>Task Organizers</h4>
+            <p class="text">
+              <a target="_blank" href="https://researcher.watson.ibm.com/researcher/view.php?person=us-sfeng">Song
+                Feng</a> (IBM Research)<br>
+            </p>
+          </div>
+        </div>
+      </div>
+  </main>
+</body>
+
+</html>
