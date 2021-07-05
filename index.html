@@ -27,10 +27,24 @@
     }); 
   </script>
 
+  <script>
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+  </script>
+
 </head>
 
 
-<body class="blue-grey darken-2">
+<!-- <body class="blue-grey darken-2"> -->
+<body>
   <div id="header"></div>
   <main>
     <div class="container">
@@ -67,97 +81,14 @@
         </div>
 
         <div class="section">
-          <h4 id="cfp">Call for Papers</h4>
-          <p class="text">
-            We welcome submissions of original work as <i>long</i> or <i>short</i> papers as well as non-archival
-            papers.
-            All accepted papers will be presented at the workshop.
-          </p>
-          <div>
-            <h6><b>Topics of interest</b></h6>
-            We encourage submissions from a wide range of topics, including but not limited to:
-            <ul class="browser-default">
-              <li class="collection-item">Document-grounded dialogue systems</li>
-              <li class="collection-item">Conversational machine reading comprehension </li>
-              <li class="collection-item">Machine reading comprehension / contextual QA / sequential QA over documents
-              </li>
-              <li class="collection-item">Conversational search among domain documents</li>
-              <li class="collection-item">Topical chat based on associated documents</li>
-              <li class="collection-item">Parsing semi-structured document content for sequential QA or dialogue / table
-                reading</li>
-              <li class="collection-item">Policy learning for document-guided dialogue agents</li>
-              <li class="collection-item">Task-oriented knowledge-grounded multimodal dialogue
-                <ul class="browser-default">
-                  <li>task-oriented situated dialogue</li>
-                  <li>task-oriented domain-knowledge-grounded VQA </li>
-                  <li>task-oriented video-based dialogue</li>
-                </ul>
-              </li>
-              <li class="collection-item">Evaluations for document-grounded dialogue</li>
-              <li class="collection-item">Transfer learning for document-grounded dialogue systems on low-resource
-                domains</li>
-              <li class="collection-item">Summarization of document-grounded dialogues</li>
-              <li class="collection-item">Model interpretation of document-grounded dialogues</li>
-            </ul>
-          </div>
-          <h6><b>Submission Details</b></h6>
-          <p style="margin-left: 30px"><i>Submission tracks</i>:<br>
-            There will be following tracks: the <i>main research</i> track ("regular long paper", "regular short paper") and <i>technical system</i> track (shared task).<br>
-          <blockquote style="margin-left: 30px">
-            To submit your paper, please use <a href="https://www.softconf.com/acl2021/w11_dialdoc21/"
-              target="_blank">Softconf
-              link</a>.
-          </blockquote>
-          </p>
-          <p style="margin-left: 30px"><i>Formatting Guidelines</i>:<br>
-            We accept <i>long</i> (eight pages plus unlimited references) and <i>short</i> (four pages plus unlimited
-            references) papers, which should
-            conform to <a target="_blank" href="https://2021.aclweb.org/calls/papers/#paper-submission-information">ACL
-              submission
-              information</a>.
-          </p>
-          <p style="margin-left: 30px"><i>Non-Archival Submissions</i>: <br>
-            The accepted papers can opt to be
-            <a href="https://acl-org.github.io/acl-pub/aclpub-start.html#non-archival-papers">non-archival</a>,
-            i.e., the work could be
-            published elsewhere before or after the workshop.</p>
-          <div>
-            <h6><b>Review Process</b></h6>
-            <div style="margin-left: 30px">All submissions will be peer-reviewed by at least two reviewers. The
-              reviewing
-              process will be double-blinded at the level of the reviewers. Authors are responsible for anonymizing the
-              submissions</div>
-          </div>
-
-          <!-- <h6><b>Submission Links</b></h6> -->
-          <!-- <blockquote>
-            For main research track, please use <a href="https://www.softconf.com/acl2021/w11_dialdoc21_sharedtask/"
-              target="_blank">Softconf
-              link</a>.<br>
-            For technical system track, please use <a href="https://www.softconf.com/acl2021/w11_dialdoc21/"
-              target="_blank">Softconf link</a>.
-          </blockquote> -->
-
-        </div>
-
-        <div class="section">
-          <h4 id="dates">Important Dates</h4>
-          <ul>
-            <li>Workshop Paper Due Date: <strike>April 26, 2021 (AoE) </strike> <b> &nbsp;&nbsp;&#8594; May 6, 2021 (AoE)</b></li>
-            <li>Notification of Acceptance: <strike>May 28, 2021 (AoE)</strike> <b>&nbsp;&nbsp;&#8594; June 1, 2021 (AoE)</b></li> 
-            <li>Camera-ready papers due: <b>June 7, 2021 (AoE)</b></li>
-            <li>Workshop Dates: August 5, 2021</li>
-          </ul>
-        </div>
-
-        <div class="section">
-          <h4 id="speakers">Invited Speakers</h4>
-          <p>
+          <h4 id="pc">Invited Speakers</h4>
+          <!-- <p>
             <a target="_blank" href="http://www.cs.tau.ac.il/~joberant/">Jonathan Berant</a> (Tel-Aviv University)<br>
             <a target="_blank" href="https://www.cs.princeton.edu/~danqic/">Danqi Chen</a> (Princeton University)<br>
+            
+            <a target="_blank" href="http://www.riedelcastro.org">Sebastian Riedel</a> (University College London)<br>
             <a target="_blank" href="https://www.linkedin.com/in/dilek-hakkani-tur-9517543/">Dilek Hakkani-Tur</a>
             (Amazon Alexa AI)<br>
-            <a target="_blank" href="http://www.riedelcastro.org">Sebastian Riedel</a> (University College London)<br>
             <a target="_blank" href="https://sites.google.com/site/verenateresarieser/">Verena Rieser</a> (Heriot-Watt
             University)<br>
             <a target="_blank" href="http://www.thespermwhale.com/jaseweston/">Jason Weston</a> (Facebook AI
@@ -165,58 +96,90 @@
             <a target="_blank" href="https://sites.cs.ucsb.edu/~william/">William Wang Yang</a> (University of
             California, Santa Barbara)<br>
             <a target="_blank" href="http://scottyih.org">Scott (Wen-tau) Yih</a> (Facebook AI Research)
-          </p>
+          </p> -->
+          <table class="striped">
+            <tr>
+              <td style="text-align:center"><img src="file/jonathan.jpeg" style="border-radius:50%" height="180"></td>
+              <td style="text-align:center"><img src="file/danqi.jpg" style="border-radius:50%" height="180"></td>
+              <td style="text-align:center"><img src="file/dilek.png" style="border-radius:50%" height="180"></td>
+              <td style="text-align:center"><img src="file/verena1.jpg" style="border-radius:50%" height="180"></td>
+            </tr>
+            <tr> 
+              <td style="text-align:center"><a target="_blank" href="http://www.cs.tau.ac.il/~joberant/">Jonathan Berant</a> <br>Tel-Aviv University</td>
+              <td style="text-align:center"><a target="_blank" href="https://www.cs.princeton.edu/~danqic/">Danqi Chen</a> <br>Princeton University</td>
+              <td style="text-align:center"><a target="_blank" href="https://www.linkedin.com/in/dilek-hakkani-tur-9517543/">Dilek Hakkani-Tur</a>
+                <br>Amazon Alexa AI)<br>&nbsp;.</td>
+              <td style="text-align:center"><a target="_blank" href="https://sites.google.com/site/verenateresarieser/">Verena Rieser</a> <br>Heriot-Watt
+                University</td>
+              
+             
+            </tr>
+           
+            <tr>
+              <td style="text-align:center"><img src="file/jason.png" style="border-radius:50%" height="180"></td>
+              
+              <td style="text-align:center"><img src="file/william.png" style="border-radius:50%" height="180"></td>
+            <td style="text-align:center"><img src="file/scott.jpeg" style="border-radius:50%" height="180"></td>
+            <!-- <td></td> -->
+        
+          </tr>
+          <tr>
+            
+            <td style="text-align:center"><a target="_blank" href="http://www.thespermwhale.com/jaseweston/">Jason Weston</a> <br>Facebook AI
+              Research<br>&nbsp;</td>
+            <td style="text-align:center"><a target="_blank" href="https://sites.cs.ucsb.edu/~william/">William Wang Yang</a> <br>University of
+              California, <br>Santa Barbara</td>
+            <td style="text-align:center"><a target="_blank" href="http://scottyih.org">Scott (Wen-tau) Yih</a> <br>Facebook AI Research<br>&nbsp;</td>
+            
+            
+              
+            <td style="text-align:center"></td>
+          </tr>
+          </table>
+
         </div>
+        
 
         <div class="section">
-          <h4 id="pc">Program Committee</h4>
-          <p>
-            Amanda Buddemeyer (University of Pittsburgh)<br>
-            Asli Celikyilmaz (Microsoft Research)<br>
-            Chengguang Tang (Alibaba DAMO) <br>
-            Chulaka Gunasekara (IBM Research AI)<br>
-            Danish Contractor (IBM Research AI)<br>
-            Dian Yu (Tencent)<br>
-            Diane Litman (University of Pittsburgh)<br>
-            Ehud Reiter (University of Aberdeen)<br>
-            Elizabeth Clark (University of Washington)<br>
-            Eunsol Choi (University of Texas at Austin)<br>
-            Hanjie Chen (University of Virginia)<br>
-            Hareesh Ravi (Rutgers University) <br>
-            Hui Wan (IBM Research AI)<br>
-            Ioannis Konstas (Heriot-Watt University)<br>
-            Jiwei Li (SHANNON.AI)<br>
-            Jonathan Herzig (Tel-Aviv University)<br>
-            Matthew Stone (Rutgers University) <br>
-            Mert Inan (University of Pittsburgh) <br>
-            Michael Johnston (Interactions)<br>
-            Minjoon Seo (KAIST)<br>
-            Mo Yu (IBM Research AI) <br>
-            Peng Qi (Stanford University)<br>
-            Ravneet Singh (University of Pittsburgh)<br>
-            Ryuichi Takanobu (Tsinghua University) <br>
-            Seokhwan Kim (Amazon Alexa AI)<br>
-            Shehzaad Dhuliawala (Microsoft Research Montreal)<br>
-            Srinivas Bangalore (Interactions)<br>
-            Vaibhav Adlakha (McGill and Mila)<br>
-            Xiaoxiao Guo (IBM Research AI)<br>
-          </p>
+          <h4 id="pc">Program</h4>
+          <!-- <p>
+            08:00–08:05 | Opening remarks<br>
+08:05–08:40 | Invited Talk 1: Jonathan Berant <br>
+08:40–09:15 | Invited Talk 2: Verena Rieser <br>
+09:15–10:05 | paper lightning talk I  <br>
+10:05–10:30 |  break<br>
+10:30–11:05 | Invited Talk 3: Jason Weston  <br>
+11:05-11:30 | Shared task overview and results + two talks<br>
+11:30-12:30 | poster session<br>
+12:30-13:30 | Lunch break<br>
+13:30–14:05 | Invited talk 4: Danqi Chen <br>
+14:05–14:55 | paper lightning talk II <br>
+14:55–15:30 | Invited talk 5 Dilek Hakkani-Tur <br>
+15:30–16:30 | Poster session <br>
+16:30-17:05 | Invited talk 6: William Wang Yang <br>
+17:05–17:40 | Invited talk 7: Scott (Wen-tau) Yih <br>
+
+          </p> -->
+          <ul class="collection">
+            <li class="collection-item">08:00–08:05 | Opening remarks</li>
+<li class="collection-item">08:05–08:40 | Invited Talk 1: Jonathan Berant </li>
+<li class="collection-item">08:40–09:15 | Invited Talk 2: Verena Rieser </li>
+<li class="collection-item">09:15–10:05 | Paper lightning talk I  </li>
+<li class="collection-item">10:05–10:30 | Break</li>
+<li class="collection-item">10:30–11:05 | Invited Talk 3: Jason Weston  </li>
+<li class="collection-item">11:05-11:30 | Shared task results</li>
+<li class="collection-item">11:30-12:30 | Poster session</li>
+<li class="collection-item">12:30-13:30 | Lunch break</li>
+<li class="collection-item">13:30–14:05 | Invited talk 4: Danqi Chen </li>
+<li class="collection-item">14:05–14:55 | Paper lightning talk II </li>
+<li class="collection-item">14:55–15:30 | Invited talk 5: Dilek Hakkani-Tur </li>
+<li class="collection-item">15:30–16:30 | Poster session </li>
+<li class="collection-item">16:30-17:05 | Invited talk 6: William Wang Yang </li>
+<li class="collection-item">17:05–17:40 | Invited talk 7: Scott (Wen-tau) Yih </li>
+
+            
         </div>
 
-        <div class="section">
-          <h4 id="organizers">Organizers</h4>
-          <p class="text">
-            <a target="_blank" href="https://www.malihealikhani.com">Malihe Alikhani</a> (University of Pittsburgh)<br>
-            <a target="_blank" href="https://researcher.watson.ibm.com/researcher/view.php?person=us-sfeng">Song
-              Feng</a> (IBM Research)<br>
-            <a target="_blank" href="https://hhexiy.github.io">He He</a> (New York University)<br>
-            <a target="_blank" href="https://people.cs.umass.edu/~miyyer/">Mohit Iyyer</a> (University of Massachusetts
-            Amherst)<br>
-            <a target="_blank" href="https://yangfengji.net">Yangfeng Ji</a> (University of Virginia)<br>
-            <a target="_blank" href="https://sivareddy.in">Siva Reddy</a> (McGill University, MILA)<br>
-            <a target="_blank" href="https://www.cs.columbia.edu/~zhouyu/">Zhou Yu</a> (Columbia University)<br>
-          </p>
-        </div>
       </div>
     </div>
   </main>
