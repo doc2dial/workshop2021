@@ -28,16 +28,14 @@
   </script>
 
   <script>
-     document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, options);
-  });
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.collapsible');
+      var instances = M.Collapsible.init(elems, options);
+    });
 
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.carousel').carousel();
-  });
+    $(document).ready(function(){
+      $('.collapsible').collapsible();
+    });
   </script>
 
 </head>
@@ -51,7 +49,6 @@
       <div class="card-panel white">
         <div class="section">
           <h4>Overview</h4>
-          
           <p><b>Welcome to 1st DialDoc Workshop at ACL-IJCNLP 2021!</b></p>
           <p>
             Goal-oriented conversational systems can unlock a vast amount of information in the associated
@@ -120,19 +117,14 @@
               
               <td style="text-align:center"><img src="file/william.png" style="border-radius:50%" height="180"></td>
             <td style="text-align:center"><img src="file/scott.jpeg" style="border-radius:50%" height="180"></td>
-            <!-- <td></td> -->
         
           </tr>
           <tr>
-            
             <td style="text-align:center"><a target="_blank" href="http://www.thespermwhale.com/jaseweston/">Jason Weston</a> <br>Facebook AI
               Research<br>&nbsp;</td>
             <td style="text-align:center"><a target="_blank" href="https://sites.cs.ucsb.edu/~william/">William Wang Yang</a> <br>University of
               California, <br>Santa Barbara</td>
             <td style="text-align:center"><a target="_blank" href="http://scottyih.org">Scott (Wen-tau) Yih</a> <br>Facebook AI Research<br>&nbsp;</td>
-            
-            
-              
             <td style="text-align:center"></td>
           </tr>
           </table>
@@ -144,21 +136,75 @@
           <h4 id="pc">Program</h4>
           <p>August 5, 2021, Thursday, 8:00 - 17:40 EDT</p>
           <ul class="collection">
-            <li class="collection-item">08:00–08:05 | Opening remarks</li>
-<li class="collection-item">08:05–08:40 | Invited talk 1: <a target="_blank" href="http://www.cs.tau.ac.il/~joberant/">Jonathan Berant</a> - <i>Exposing and Covering Language Model Blind Spots by Generating Data from Structured Representations </i> </li>
-<li class="collection-item">08:40–09:15 | Invited talk 2: <a target="_blank" href="https://sites.google.com/site/verenateresarieser/">Verena Rieser</a> - <i>Grounded Neural Generation</i> </li>
-<li class="collection-item">09:15–10:05 | Paper lightning talk I  </li>
-<li class="collection-item">10:05–10:30 | Break</li>
-<li class="collection-item">10:30–11:05 | Invited talk 3: <a target="_blank" href="http://www.thespermwhale.com/jaseweston/">Jason Weston</a> - <i>Towards Knowledgeable Open-Domain Dialogue Agents</i> </li>
-<li class="collection-item">11:05-11:30 | Shared task results</li>
-<li class="collection-item">11:30-12:30 | Poster session I</li>
-<li class="collection-item">12:30-13:30 | Lunch break</li>
-<li class="collection-item">13:30–14:05 | Invited talk 4: <a target="_blank" href="https://www.cs.princeton.edu/~danqic/">Danqi Chen</a> - <i>Learning Representations for Dense Retrieval</i> </li>
-<li class="collection-item">14:05–14:55 | Paper lightning talk II </li>
-<li class="collection-item">14:55–15:30 | Invited talk 5: <a target="_blank" href="https://www.linkedin.com/in/dilek-hakkani-tur-9517543/">Dilek Hakkani-Tur</a> </li>
-<li class="collection-item">15:30–16:30 | Poster session II </li>
-<li class="collection-item">16:30-17:05 | Invited talk 6: <a target="_blank" href="https://sites.cs.ucsb.edu/~william/">William Wang Yang</a> - <i>Question Answering over Text and Tables</i> </li>
-<li class="collection-item">17:05–17:40 | Invited talk 7: <a target="_blank" href="http://scottyih.org">Scott (Wen-tau) Yih</a> - <i>Conversational Question Answering</i> </li>
+            <li class="collection-item">08:00–08:05 | Opening Remarks</li>
+            <li class="collection-item">08:05–08:40 | Invited Talk 1: <a target="_blank" href="http://www.cs.tau.ac.il/~joberant/">Jonathan Berant</a> - <i>Exposing and Covering Language Model Blind Spots by Generating Data from Structured Representations </i> </li>
+            <li class="collection-item">08:40–09:15 | Invited Talk 2: <a target="_blank" href="https://sites.google.com/site/verenateresarieser/">Verena Rieser</a> - <i>Grounded Neural Generation</i> </li>
+            <li class="collection-item">09:15–10:05 | Paper Lightning Talk I  <br>
+              <button onclick="myFunction1()">Show/Hide Talks</button>
+              <div id="talk1" style="display: none">
+                <p>
+                  <a href="https://aclanthology.org/2021.dialdoc-1.2/">SeqDialN: Sequential Visual Dialog Network in Joint Visual-Linguistic Representation Space</a><br>
+                  Liu Yang | Fanqi Meng | Xiao Liu | Ming-Kuang Daniel Wu | Vicent Ying | James Xu
+                </p> 
+                <p><a href="https://aclanthology.org/2021.dialdoc-1.3/">A Template-guided Hybrid Pointer Network for Knowledge-based Task-oriented Dialogue Systems</a><br>
+                  Dingmin Wang | Ziyao Chen | Wanwei He | Li Zhong | Yunzhe Tao | Min Yang</p>
+
+                  <p><a href="https://aclanthology.org/2021.dialdoc-1.5/">Combining Open Domain Question Answering with a Task-Oriented Dialog System</a><br>
+                    Jan Nehring | Nils Feldhus | Harleen Kaur | Akhyar Ahmed</p>
+        
+                <p><a href="https://arxiv.org/abs/2104.08202">Q<sup>2</sup>: Evaluating Factual Consistency in Knowledge-Grounded Dialogues via Question Generation and Question Answering</a><br>
+                  Or Honovich | Leshem Choshen | Roee Aharoni | Ella Neeman | Idan Szpektor | Omri Abend</p>
+                  <p><a href="https://aclanthology.org/2021.dialdoc-1.11/">Summary-Oriented Question Generation for Informational Queries</a><br>
+                    Xusen Yin | Li Zhou | Kevin Small | Jonathan May</p>
+                    <!-- <p><a href="https://aclanthology.org/2021.dialdoc-1.7/">Technical Report on Shared Task in DialDoc21</a><br>
+                      Jiapeng Li | Mingda Li | Longxuan Ma | Wei-Nan Zhang | Ting Liu</p> -->
+                  <p><a href="https://aclanthology.org/2021.findings-acl.139/">HyKnow: End to end Task oriented Dialog Modeling with Hybrid Knowledge Management</a><br>
+                    Silin Gao | Ryuichi Takanobu 1 | Wei Peng | Qun Liu | Minlie Huang</p>
+                  <p><a href="https://aclanthology.org/2021.findings-acl.279/">Dialogue Graph Modeling for Conversational Machine Reading</a><br>
+                    SiruOuyang | ZhuoshengZhang | Hai Zhao
+                  </p>
+                  <p><a href="https://aclanthology.org/2021.findings-acl.446.pdf">Phrase-Level Action Reinforcement Learning for Neural Dialog Response Generation</a><br>
+                    Takato Yamazaki | Akiko Aizawa</p>
+              </div>
+
+            </li>
+            <li class="collection-item">10:05–10:30 | Break</li>
+            <li class="collection-item">10:30–11:05 | Invited Talk 3: <a target="_blank" href="http://www.thespermwhale.com/jaseweston/">Jason Weston</a> - <i>Towards Knowledgeable Open-Domain Dialogue Agents</i> </li>
+            <li class="collection-item">11:05-11:30 | Shared Task Results<br>
+              <button onclick="myFunction3()">Show/Hide Talks</button>
+              <div id="shared" style="display: none">
+                <p>&nbsp;&nbsp;11:05-11:10 | <a href="https://aclanthology.org/2021.dialdoc-1.1/">Shared Task Overview</a></p>
+                <p>&nbsp;&nbsp;11:10-11:20 | Team ER </p>
+                <p>&nbsp;&nbsp;11:20-11:30 | <a href="https://aclanthology.org/2021.dialdoc-1.12/">Team KU_NLP</a></p>
+                </div>
+            </li>
+            <li class="collection-item">11:30-12:30 | Poster Session I</li>
+            <li class="collection-item">12:30-13:30 | Lunch break</li>
+            <li class="collection-item">13:30–14:05 | Invited Talk 4: <a target="_blank" href="https://www.cs.princeton.edu/~danqic/">Danqi Chen</a> - <i>Learning Representations for Dense Retrieval</i> </li>
+            <li class="collection-item">14:05–14:55 | Paper Lightning Talk II <br>
+              <button onclick="myFunction2()">Show/Hide Talks</button>
+              <div id="talk2" style="display: none">
+                <p><a href="https://aclanthology.org/2021.dialdoc-1.10/">WeaSuL<sup>&#960;</sup>: Weakly Supervised Dialogue Policy Learning: Reward Estimation for Multi-turn Dialogue</a><br>
+                  Anant Khandelwal</p>
+                <p><a href="https://aclanthology.org/2021.dialdoc-1.14/">Building Goal-oriented Document-grounded Dialogue Systems</a><br>
+                  Xi Chen | Faner Lin | Yeju Zhou | Kaixin Ma | Jonathan Francis | Eric Nyberg | Alessandro Oltramari</p>
+                <p><a href="https://aclanthology.org/2021.dialdoc-1.15/">Agenda Pushing in Email to Thwart Phishing</a><br>
+                  Hyundong Cho | Genevieve Bartlett | Marjorie Freedman</p>
+                <p><a href="https://aclanthology.org/2021.dialdoc-1.16/">Can I Be of Further Assistance? Using Unstructured Knowledge Access to Improve Task-oriented Conversational Modeling</a><br>
+                  Di Jin | Seokhwan Kim | Dilek Hakkani-Tur</p>
+                <p><a href="https://aclanthology.org/2021.findings-acl.262/">Knowledge-Grounded Dialogue Generation with Term-level De-noising</a><br>
+                  Wen Zheng | Natasa Milic Frayling | Ke Zhou
+                </p>
+                <p><a href="https://aclanthology.org/2021.findings-acl.329/">Summary Grounded Conversation Generation</a><br>
+                  Chulaka Gunasekara | Guy Feigenblat | Benjamin Sznajder | Sachindra Joshi | David Konopnicki
+                </p>
+                
+              </div>
+            </li>
+            <li class="collection-item">14:55–15:30 | Invited Talk 5: <a target="_blank" href="https://www.linkedin.com/in/dilek-hakkani-tur-9517543/">Dilek Hakkani-Tur</a> </li>
+            <li class="collection-item">15:30–16:30 | Poster Session II </li>
+            <li class="collection-item">16:30-17:05 | Invited Talk 6: <a target="_blank" href="https://sites.cs.ucsb.edu/~william/">William Wang Yang</a> - <i>Question Answering over Text and Tables</i> </li>
+            <li class="collection-item">17:05–17:40 | Invited Talk 7: <a target="_blank" href="http://scottyih.org">Scott (Wen-tau) Yih</a> - <i>Conversational Question Answering</i> </li>
 
             
         </div>
@@ -166,6 +212,37 @@
       </div>
     </div>
   </main>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    function myFunction1() {
+      var x = document.getElementById("talk1");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    function myFunction2() {
+      var x = document.getElementById("talk2");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    function myFunction3() {
+      var x = document.getElementById("shared");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
 </body>
 
 </html>
